@@ -1,16 +1,25 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { toast, NgxSonnerToaster } from 'ngx-sonner';
+
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { TextareaModule } from 'primeng/textarea';
+import { SelectModule } from 'primeng/select';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
-    RouterOutlet,
-    NgxSonnerToaster
+    ButtonModule,
+    InputTextModule,
+    TextareaModule,
+    SelectModule,
+    FormsModule
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   protected readonly title = signal('Front-pos');
+  pago: 'cash' | 'card' | null = null;
 }
