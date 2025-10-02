@@ -1,0 +1,6 @@
+{
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "files.eol": "\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
